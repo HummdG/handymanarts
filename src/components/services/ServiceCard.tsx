@@ -1,0 +1,28 @@
+import Link from 'next/link'
+import { Service } from '@/data/services'
+
+interface ServiceCardProps {
+  service: Service
+  index: number
+}
+
+export default function ServiceCard({ service, index }: ServiceCardProps) {
+  const num = String(index + 1).padStart(2, '0')
+
+  return (
+    <Link href={`/services/${service.slug}`} className="service-row group">
+      <span className="service-row-number" aria-hidden="true">{num}</span>
+      <span className="service-row-name">{service.name}</span>
+      <svg
+        className="service-row-arrow w-5 h-5 flex-shrink-0"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        aria-hidden="true"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+      </svg>
+    </Link>
+  )
+}
