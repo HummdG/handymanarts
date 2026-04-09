@@ -1,0 +1,4 @@
+Sitemap: https://www.handymanarts.co.uk/sitemap.xml
+
+User-agent: *
+Disallow:
