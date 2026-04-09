@@ -19,21 +19,28 @@ const trustPoints = [
 
 export default function TrustBar() {
   return (
-    <section className="bg-brand-warm-white border-b border-surface-border-light" aria-label="Service guarantees">
+    <section className="bg-white border-b border-surface-border-light" aria-label="Service guarantees">
       <div className="container-site">
-        <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-surface-border-light">
+        <ul className="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-surface-border-light">
           {trustPoints.map((point, i) => (
-            <div
+            <li
               key={point.title}
-              className="flex flex-col gap-1 px-5 sm:px-7 py-5 sm:py-6"
+              className="flex-1 flex flex-col gap-1.5 px-6 sm:px-8 py-7 sm:py-8"
             >
-              <p className="text-[10px] font-semibold tracking-[0.14em] uppercase text-brand-copper">
+              <span
+                className="font-display italic text-brand-copper/55 leading-none select-none block"
+                style={{ fontSize: '2rem', lineHeight: 1, fontStyle: 'italic' }}
+                aria-hidden="true"
+              >
+                {String(i + 1)}
+              </span>
+              <p className="font-display font-semibold text-surface-dark text-lg leading-tight mt-1">
                 {point.title}
               </p>
-              <p className="text-sm text-surface-stone leading-snug">{point.desc}</p>
-            </div>
+              <p className="text-xs text-surface-stone leading-snug">{point.desc}</p>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   )

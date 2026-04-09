@@ -200,7 +200,7 @@ export const SERVICES: Service[] = [
       'Professional CCTV installation in Notting Hill W11 by Handyman Arts. We deliver clean, discreet installations with properly positioned cameras, tidy cable management and full system testing so you can monitor your property with confidence.',
     iconKey: 'cctv',
     heroImage:
-      'https://images.unsplash.com/photo-1557597774-9d273605f43d?w=1400&q=80&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1400&q=80&auto=format&fit=crop',
     whatWeOffer: [
       'HD and 4K camera installation (wired and wireless)',
       'Doorbell camera and video intercom fitting',
@@ -257,7 +257,7 @@ export const SERVICES: Service[] = [
       'Professional smart home installation in London by Handyman Arts. We help homeowners, landlords and businesses upgrade their properties with reliable smart technology — improving security, convenience and energy efficiency.',
     iconKey: 'smart',
     heroImage:
-      'https://images.unsplash.com/photo-1558002697-10a92e5b5d56?w=1400&q=80&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1400&q=80&auto=format&fit=crop',
     whatWeOffer: [
       'Video doorbell installation (Ring, Nest, Arlo)',
       'Smart lighting setup (Philips Hue, LIFX)',
@@ -428,7 +428,7 @@ export const SERVICES: Service[] = [
       'Professional TV wall mounting in Notting Hill W11 by Handyman Arts. We mount any size TV safely and securely, with tidy cable management for a clean, built-in look.',
     iconKey: 'tv',
     heroImage:
-      'https://images.unsplash.com/photo-1593359677879-a4021787c22f?w=1400&q=80&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1601944179066-29786cb9d32a?w=1400&q=80&auto=format&fit=crop',
     whatWeOffer: [
       'Fixed and tilting bracket installation',
       'Full-motion articulated arm mounting',

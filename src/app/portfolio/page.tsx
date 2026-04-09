@@ -20,7 +20,7 @@ const portfolioItems = [
     location: 'Notting Hill W11',
     description: 'Full-motion bracket installation on a plasterboard wall with cables concealed inside the wall cavity.',
     category: 'TV Wall Mounting',
-    image: 'https://images.unsplash.com/photo-1593359677879-a4021787c22f?w=800&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1601944179066-29786cb9d32a?w=800&q=80&auto=format&fit=crop',
   },
   {
     title: 'Full Bathroom Tiling',
@@ -41,14 +41,14 @@ const portfolioItems = [
     location: 'Ladbroke Grove W10',
     description: '4-camera external CCTV system for a landlord\'s property, with mobile app remote viewing.',
     category: 'CCTV Installation',
-    image: 'https://images.unsplash.com/photo-1557597774-9d273605f43d?w=800&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800&q=80&auto=format&fit=crop',
   },
   {
     title: 'Smart Doorbell & Thermostat',
     location: 'Bayswater W2',
     description: 'Ring video doorbell and Hive smart thermostat installation, integrated with Google Home.',
     category: 'Smart Home',
-    image: 'https://images.unsplash.com/photo-1558002697-10a92e5b5d56?w=800&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80&auto=format&fit=crop',
   },
   {
     title: 'Gallery Wall Installation',

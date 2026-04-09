@@ -14,11 +14,11 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-white/96 backdrop-blur-md border-b border-surface-border-light">
+    <header className="sticky top-0 z-40 bg-[#f7f4ef]/95 backdrop-blur-md border-b border-surface-border-light/70">
       <div className="container-site">
         <div className="flex items-center justify-between h-16 lg:h-[70px]">
 
-          {/* Logo — actual brand image */}
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group flex-shrink-0" aria-label="Handyman Arts — Home">
             <div className="relative h-9 w-32">
               <Image
@@ -38,7 +38,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-3.5 py-2 text-[13px] font-medium tracking-wide text-surface-stone hover:text-surface-dark transition-colors uppercase"
+                className="px-3.5 py-2 text-[12px] font-medium tracking-[0.08em] text-surface-stone hover:text-surface-dark transition-colors uppercase"
               >
                 {link.label}
               </Link>
@@ -46,7 +46,7 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-5">
             <a
               href={`tel:${SITE_CONFIG.phoneTel}`}
               className="text-sm font-semibold text-surface-dark hover:text-brand-copper transition-colors tabular-nums"
@@ -55,7 +55,7 @@ export default function Header() {
             </a>
             <Link
               href="/contact"
-              className="px-5 py-2.5 bg-brand-copper text-white text-[13px] font-semibold tracking-wide uppercase rounded-btn hover:bg-brand-copper-dark transition-colors"
+              className="px-5 py-2.5 bg-brand-deep text-white text-[11px] font-semibold tracking-[0.1em] uppercase rounded-btn hover:bg-brand-charcoal transition-colors"
             >
               Free Quote
             </Link>

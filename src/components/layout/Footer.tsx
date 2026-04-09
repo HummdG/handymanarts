@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { SITE_CONFIG } from '@/data/siteConfig'
 import { SERVICES } from '@/data/services'
 import { SERVICE_AREAS } from '@/data/serviceAreas'
@@ -22,15 +21,9 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-5 group" aria-label="Handyman Arts — Home">
-              <div className="relative h-10 w-36">
-                <Image
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,fit=crop/m2WBv6L0aru9oZlb/handyman_logo-dOqyoLrL0QiRekeX.png"
-                  alt="Handyman Arts logo"
-                  fill
-                  className="object-contain object-left brightness-0 invert"
-                  sizes="144px"
-                />
-              </div>
+              <span className="font-display font-semibold text-white group-hover:text-brand-copper transition-colors leading-none" style={{ fontSize: '1.375rem', letterSpacing: '-0.01em' }}>
+                Handyman Arts
+              </span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed mb-6 max-w-xs">
               {SITE_CONFIG.tagline}

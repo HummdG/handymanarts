@@ -104,7 +104,24 @@
   /* Service list row — distinctive numbered editorial list */
   .service-row {
     @apply flex items-center gap-4 py-5 border-b border-surface-border-light
-      hover:bg-brand-parchment transition-colors cursor-pointer;
+      transition-all cursor-pointer relative;
+  }
+
+  .service-row::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #c07a28;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .service-row:hover::before {
+    transform: scaleY(1);
   }
 
   .service-row-number {

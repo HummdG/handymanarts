@@ -11,7 +11,7 @@ export default function TestimonialsCarousel() {
   const next = () => setActiveIndex((i) => (i === TESTIMONIALS.length - 1 ? 0 : i + 1))
 
   return (
-    <section className="section-padding bg-brand-deep" aria-labelledby="testimonials-heading">
+    <section className="section-padding bg-brand-charcoal" aria-labelledby="testimonials-heading">
       <div className="container-site">
 
         {/* Section header */}
@@ -42,7 +42,7 @@ export default function TestimonialsCarousel() {
         </div>
 
         {/* Desktop: 3 across */}
-        <div className="hidden md:grid md:grid-cols-3 gap-6">
+        <div className="hidden md:grid md:grid-cols-3 gap-10">
           {TESTIMONIALS.slice(0, 6).map((t) => (
             <TestimonialCard key={t.id} testimonial={t} />
           ))}
@@ -109,27 +109,28 @@ export default function TestimonialsCarousel() {
 
 function TestimonialCard({ testimonial }: { testimonial: typeof TESTIMONIALS[0] }) {
   return (
-    <div className="flex flex-col bg-white/5 border border-white/8 rounded-card p-6 h-full">
+    <article className="flex flex-col border-t border-white/10 pt-8 h-full">
       {/* Opening quote mark */}
       <span
-        className="font-display italic text-brand-copper leading-none mb-3 select-none"
-        style={{ fontSize: '3rem', lineHeight: 1, fontStyle: 'italic', opacity: 0.5 }}
+        className="font-display text-brand-copper/25 leading-none select-none block -mb-1"
+        style={{ fontSize: '2.75rem', lineHeight: 1, fontStyle: 'italic' }}
         aria-hidden="true"
       >
         &ldquo;
       </span>
-      <blockquote className="text-white/70 text-sm leading-relaxed flex-1 mb-6">
+      <blockquote
+        className="font-display italic text-white/65 leading-relaxed flex-1 mb-8"
+        style={{ fontSize: 'clamp(0.9375rem, 1.25vw, 1.0625rem)' }}
+      >
         {testimonial.text}
       </blockquote>
-      <div className="flex items-center gap-3 pt-4 border-t border-white/10">
-        <div className="w-9 h-9 rounded-full bg-brand-copper/20 text-brand-copper flex items-center justify-center text-xs font-bold flex-shrink-0">
-          {testimonial.initials}
-        </div>
+      <footer className="flex items-center gap-3">
+        <div className="w-6 h-px bg-brand-copper/40 flex-shrink-0" aria-hidden="true" />
         <div>
-          <p className="text-white text-sm font-semibold leading-tight">{testimonial.name}</p>
-          <p className="text-white/35 text-xs">{testimonial.location}</p>
+          <p className="text-white/50 text-[11px] font-semibold tracking-widest uppercase leading-tight">{testimonial.name}</p>
+          <p className="text-white/25 text-[10px] mt-0.5">{testimonial.location}</p>
         </div>
-      </div>
-    </div>
+      </footer>
+    </article>
   )
 }

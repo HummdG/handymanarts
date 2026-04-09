@@ -48,17 +48,22 @@ export default function HowItWorks() {
 
         <div className="grid md:grid-cols-3 gap-10 md:gap-8">
           {steps.map((step) => (
-            <div key={step.number} className="flex flex-col">
-              {/* Number */}
+            <div key={step.number} className="flex flex-col relative overflow-hidden pt-2">
+              {/* Atmospheric ghost number */}
               <span
-                className="font-display italic text-brand-copper leading-none mb-5 select-none"
-                style={{ fontSize: 'clamp(3.5rem, 6vw, 5rem)', fontStyle: 'italic', opacity: 0.6 }}
+                className="absolute top-0 right-0 font-display font-bold text-brand-copper leading-none select-none pointer-events-none"
+                style={{ fontSize: 'clamp(6rem, 10vw, 9rem)', lineHeight: 0.9, opacity: 0.055, fontStyle: 'italic' }}
                 aria-hidden="true"
               >
                 {step.number}
               </span>
-              {/* Rule */}
-              <div className="w-8 h-px bg-surface-border-light mb-5" aria-hidden="true" />
+              {/* Step indicator */}
+              <span
+                className="font-display italic text-brand-copper text-sm leading-none mb-6 select-none block"
+                style={{ fontStyle: 'italic' }}
+              >
+                — {step.number}
+              </span>
               <h3 className="font-display font-semibold text-surface-dark text-xl mb-3 leading-snug">
                 {step.title}
               </h3>
